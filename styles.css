@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #00C48E;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+    background-color: #1A1E29;
+    padding: 1.5rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00C48E;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #00C48E;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #132D46 0%, #1A1E29 100%);
+    padding: 120px 5% 80px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #00C48E;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #00C48E;
+    color: #1A1E29;
+}
+
+.btn-primary:hover {
+    background-color: #00a876;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,196,142,0.3);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #00C48E;
+    border: 2px solid #00C48E;
+}
+
+.btn-secondary:hover {
+    background-color: #00C48E;
+    color: #1A1E29;
+}
+
+/* Sections */
+section {
+    padding: 80px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #00C48E;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #132D46;
+    opacity: 0.8;
+}
+
+/* About Section */
+.about {
+    background-color: #f8f9fa;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-text h3 {
+    color: #132D46;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.about-text p {
+    color: #132D46;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.team-badge {
+    background-color: #00C48E;
+    color: #1A1E29;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    display: inline-block;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+/* User Types */
+.user-types {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.user-card {
+    background-color: #1A1E29;
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.user-card:hover {
+    transform: translateY(-10px);
+}
+
+.user-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #00C48E;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2.5rem;
+}
+
+.user-card h3 {
+    color: #00C48E;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+/* Features */
+.features-list {
+    list-style: none;
+    text-align: left;
+}
+
+.features-list li {
+    color: #ffffff;
+    padding: 0.8rem 0;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.features-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #00C48E;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Stats */
+.stats {
+    background: linear-gradient(135deg, #132D46 0%, #1A1E29 100%);
+    color: #ffffff;
+    text-align: center;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.stat-item h3 {
+    font-size: 3rem;
+    color: #00C48E;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: #00C48E;
+    text-align: center;
+    padding: 60px 5%;
+}
+
+.cta-section h2 {
+    color: #1A1E29;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    color: #1A1E29;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #1A1E29;
+    color: #00C48E;
+    padding: 3rem 5%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.footer-section h4 {
+    color: #00C48E;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer-section p, .footer-section a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a:hover {
+    color: #00C48E;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0,196,142,0.3);
+    text-align: center;
+    color: #ffffff;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    background-color: #00C48E;
+    color: #1A1E29;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-content,
+    .user-types,
+    .stats-grid,
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+}
